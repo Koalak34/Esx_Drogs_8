@@ -68,7 +68,7 @@ local function HarvestCoke(source)
 
 			local coke = xPlayer.getInventoryItem('coke')
 
-			if coke.weight ~= -1 and coke.count >= coke.weight then
+			if coke.weight ~= nil and coke.count >= coke.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_coke'))
 			else
 				xPlayer.addInventoryItem('coke', 1)
@@ -240,7 +240,7 @@ local function HarvestCrack(source)
 
 			local crack = xPlayer.getInventoryItem('crack')
 
-			if crack.weight ~= -1 and crack.count >= crack.weight then
+			if crack.weight ~= nil and crack.count >= crack.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_crack'))
 			else
 				xPlayer.addInventoryItem('crack', 1)
@@ -413,7 +413,7 @@ local function HarvestMeth(source)
 
 			local meth = xPlayer.getInventoryItem('meth')
 
-			if meth.weight ~= -1 and meth.count >= meth.weight then
+			if meth.weight ~= nil and meth.count >= meth.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_meth'))
 			else
 				xPlayer.addInventoryItem('meth', 1)
@@ -441,7 +441,7 @@ local function HarvestMethlab(source)
 
 			local methlab = xPlayer.getInventoryItem('methlab')
 
-			if methlab.weight ~= -1 and methlab.count >= methlab.weight then
+			if methlab.weight ~= nil and methlab.count >= methlab.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_methlab'))
 			else
 				xPlayer.addInventoryItem('methlab', 1)
@@ -468,7 +468,7 @@ local function HarvestAcetone(source)
 
 			local acetone = xPlayer.getInventoryItem('acetone')
 
-			if acetone.weight ~= -1 and acetone.count >= acetone.weight then
+			if acetone.weight ~= nil and acetone.count >= acetone.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_acetone'))
 			else
 				xPlayer.addInventoryItem('acetone', 1)
@@ -495,7 +495,7 @@ local function HarvestLithium(source)
 
 			local lithium = xPlayer.getInventoryItem('lithium')
 
-			if lithium.weight ~= -1 and lithium.count >= lithium.weight then
+			if lithium.weight ~= nil and lithium.count >= lithium.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_lithium'))
 			else
 				xPlayer.addInventoryItem('lithium', 1)
@@ -747,7 +747,7 @@ local function HarvestKetamine(source)
 
 			local ketamine = xPlayer.getInventoryItem('ketamine')
 
-			if ketamine.weight ~= -1 and ketamine.count >= ketamine.weight then
+			if ketamine.weight ~= nil and ketamine.count >= ketamine.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_ketamine'))
 			else
 				xPlayer.addInventoryItem('ketamine', 1)
@@ -1094,7 +1094,7 @@ local function HarvestEcstasy(source)
 
 			local ecstasy = xPlayer.getInventoryItem('ecstasy')
 
-			if ecstasy.weight ~= -1 and ecstasy.count >= ecstasy.weight then
+			if ecstasy.weight ~= nil and ecstasy.count >= ecstasy.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_ecstasy'))
 			else
 				xPlayer.addInventoryItem('ecstasy', 1)
@@ -1264,7 +1264,7 @@ local function HarvestOpium(source)
 
 			local opium = xPlayer.getInventoryItem('opium')
 
-			if opium.weight ~= -1 and opium.count >= opium.weight then
+			if opium.weight ~= nil and opium.count >= opium.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_opium'))
 			else
 				xPlayer.addInventoryItem('opium', 1)
@@ -1438,7 +1438,7 @@ local function HarvestBillet(source)
 
 			local billet = xPlayer.getInventoryItem('billet')
 
-			if billet.weight ~= -1 and billet.count >= billet.weight then
+			if billet.weight ~= nil and billet.count >= billet.weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_billet'))
 			else
 				xPlayer.addInventoryItem('billet', 1)
