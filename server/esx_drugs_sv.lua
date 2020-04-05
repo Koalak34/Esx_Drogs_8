@@ -922,8 +922,10 @@ local function HarvestWeed(source)
 			local xPlayer = ESX.GetPlayerFromId(_source)
 
 			local weed = xPlayer.getInventoryItem('weed')
+			local weed_weight = xPlayer.getInventoryItem('weed').weight
+			local weed_count = xPlayer.getInventoryItem('weed').count
 
-			if weed.weight ~= -1 and weed.count >= weed.weight then
+			if weed_weight ~= nil and weed_count >= weed_weight then
 				TriggerClientEvent('esx:showNotification', source, _U('inv_full_weed'))
 			else
 				xPlayer.addInventoryItem('weed', 1)
